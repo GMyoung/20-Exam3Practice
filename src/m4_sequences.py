@@ -6,7 +6,7 @@ This problem provides practice at:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
+         and Yicheng Yang.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
@@ -37,9 +37,9 @@ import rosegraphics as rg
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_practice_problem4a()
-    run_test_practice_problem4b()
-    run_test_practice_problem4c()
-    run_test_practice_problem4d()
+    # run_test_practice_problem4b()
+    # run_test_practice_problem4c()
+    # run_test_practice_problem4d()
 
 
 def is_prime(n):
@@ -110,6 +110,16 @@ def run_test_practice_problem4a():
 
 
 def practice_problem4a(sequence):
+    LOL = []
+    k = 0
+    for k in range(len(sequence)-1):
+        if sequence[k] == sequence[k+1]:
+            k = k+1
+            LOL.append(k-1)
+
+    return LOL
+
+
     """
     What comes in: A non-empty sequence.
     What goes out: Returns a list of integers,

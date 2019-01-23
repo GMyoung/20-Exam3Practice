@@ -6,8 +6,8 @@ This problem provides practice at:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and YichengYang.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # Students:
@@ -41,7 +41,7 @@ def main():
 # Students: Some of the testing code below uses SimpleTestCase objects,
 #           from the imported   simple_testing (st)   module.
 # -----------------------------------------------------------------------------
-
+import math
 
 def run_test_practice_problem3():
     """ Tests the   practice_problem3  function. """
@@ -138,6 +138,17 @@ def run_test_practice_problem3():
 
 
 def practice_problem3(start, n, threshold):
+    LOL = []
+    k = 0
+    while True:
+
+        if len(LOL) >= n:
+            break
+        if math.sin(k+start)+math.cos(k+start)> threshold:
+            LOL += [start+k]
+        k = k + 1
+    return LOL
+
     """
     What comes in:
       -- An integer:  start
